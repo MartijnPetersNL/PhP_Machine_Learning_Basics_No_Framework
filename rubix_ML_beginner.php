@@ -42,12 +42,13 @@ $extractor = new NDJSON('example.ndjson');
 
 $iterator = new LimitIterator($extractor->getIterator(), 0, 1000);
 
-$dataset = Unlabeled::fromIterator($iterator);
+$datasetNDJSON = Unlabeled::fromIterator($iterator)
+    ->apply(new NumericStringConverter());
+
 // inhoud voorbeeld example.ndjson:
 // {"attitude":"nice","texture":"furry","sociability":"friendly","rating":4,"class":"not monster"}
 // {"attitude":"mean","texture":"furry","sociability":"loner","rating":-1.5,"class":"monster"}
 // {"attitude":"nice","texture":"rough","sociability":"friendly","rating":2.6,"class":"not monster"}
-    ->apply(new NumericStringConverter());
 
 var_dump($datasetNDJSON->samples()); // Output: Array of samples from the NDJSON file
 echo $datasetNDJSON->numSamples(); // Output: Number of samples in the dataset
