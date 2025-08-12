@@ -1,0 +1,52 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body {
+	margin-top: 30px;
+	margin-left: 20px;
+	margin-right: 20px;
+}
+h1 {
+	color: darkslateblue;
+}
+h2 {
+	color: darkslategray;
+}
+nav {
+	background-color: #333;
+	color: rgb(54, 167, 60);
+	padding: 10px;
+	margin: 1vh 1vw 1vh 1vw;
+}
+nav.navbar-top {
+	border-radius: 5px;
+	color: rgb(88, 165, 92);
+}
+.score {
+	color: rgb(5, 143, 0);
+	font-weight: bold;
+	margin-left: 10px;
+}
+footer {
+	border: 2px solid #6d6d6d;
+}
+/* Afbeedingen */
+img {
+	max-width: 100%;
+	border: 2px solid red;
+	height: auto;
+	display: block;
+	margin: 20px auto;
+	border-radius: 10px;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.main-image {
+	display: block;
+	margin: 20px auto;
+	width: 80%;
+	height: auto;
+	border-radius: 10px;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}

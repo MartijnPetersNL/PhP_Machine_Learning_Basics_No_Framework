@@ -1,0 +1,8 @@
+{
+	"require": {
+		"php-ai/php-ml": "^0.10.0",
+		"php-ai/php-ml-datasets": "0.6",
+		"php-ai/php-ml-extra": "^0.6",
+		"szymach/c-pchart": "^1.1"
+	}
+}
