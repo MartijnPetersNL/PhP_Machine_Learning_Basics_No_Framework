@@ -16,3 +16,17 @@ $predicted = $classifcication->predict($dataset->getTestSamples());
 // Accuracy
 $accuracy = \Phpml\Metric\Accuracy::score($dataset->getTestLabels(), $predicted);
 echo "Accuracy based on dataset : " . $accuracy . PHP_EOL;
+?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Machine learning classification</title>
+</head>
+<body>
+    
+</body>
+</html>
+
+</html>

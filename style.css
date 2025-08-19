@@ -4,6 +4,27 @@
 	box-sizing: border-box;
 }
 body {
+	margin-left: 4vw;
+	border: 2px solid red; /* Added for composition testing */
+}
+.shortcuttiles {
+	border: 2px red solid;
+	border-radius: 10px;
+	text-align: center;
+	background-color: rgb(51, 136, 165);
+	padding-top: 1vh;
+	padding-bottom: 1vh;
+	margin-left: 5vw;
+	margin-right: 5vw;
+	font-size: 2rem;
+}
+.shortcuttiles-container {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	border: 2px green solid;
+}
+body {
 	margin-top: 30px;
 	margin-left: 20px;
 	margin-right: 20px;
@@ -15,14 +36,26 @@ h2 {
 	color: darkslategray;
 }
 nav {
-	background-color: #333;
+	background-color: #d4d4d4;
 	color: rgb(54, 167, 60);
 	padding: 10px;
 	margin: 1vh 1vw 1vh 1vw;
 }
+.intro-div,
+.content-div {
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
 nav.navbar-top {
 	border-radius: 5px;
 	color: rgb(88, 165, 92);
+}
+.image-container {
+	display: flex;
+	flex-direction: row;
+	align-items: flex-start;
+	gap: 16px;
+	font-size: 0.5rem;
 }
 .score {
 	color: rgb(5, 143, 0);
@@ -32,15 +65,28 @@ nav.navbar-top {
 footer {
 	border: 2px solid #6d6d6d;
 }
+img.image-leftalign {
+	display: flex;
+	align-items: flex-start;
+	border: orangered 4px solid;
+	margin-right: 10px;
+}
 /* Afbeedingen */
 img {
-	max-width: 100%;
-	border: 2px solid red;
+	max-width: 40vw;
+	min-width: 10vw;
+	max-height: 35vh;
+	min-height: 10vh;
+	border: 2px solid purple;
 	height: auto;
 	display: block;
 	margin: 20px auto;
 	border-radius: 10px;
 	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.infographic,
+.animation {
+	background-color: black;
 }
 .main-image {
 	display: block;
@@ -49,4 +95,13 @@ img {
 	height: auto;
 	border-radius: 10px;
 	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+ul {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+}
+li {
+	text-decoration: none;
+	margin: 5px 0;
 }
